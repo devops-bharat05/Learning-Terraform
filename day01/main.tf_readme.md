@@ -200,6 +200,26 @@ Follow these commands to set up the infrastructure with Terraform:
    ```
 
 ---
+## :screenshot: Snapshots
+- Applying terraform code using "terraform apply"
+![Alt text](imgs/terraform-apply.png)
+- Verifiying the VPC 
+![Alt text](imgs/vpc.png)
+
+- Verifiying the Internet-Gateway
+![Alt text](imgs/internet-gateway.png)
+- Verifiying the Route-Table
+![Alt text](imgs/route-tables.png)
+- Verifiying the Public Subnet
+![Alt text](imgs/public-subnet.png)
+- Verifiying the Sercurity Group
+![Alt text](imgs/Security-grp.png)
+- Verifiying the Sercurity Group - Inbound rules
+![Alt text](imgs/sercurity-outbound.png)
+- Verifiying the Sercurity Group - Outbound rules
+![Alt text](imgs/sercurity-inbound.png)
+- Destroying the infra using "terraform destroy"
+![Alt text](imgs/terraform-destroy.png)
 
 ## 🏁 Conclusion
 
