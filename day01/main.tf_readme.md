@@ -200,7 +200,7 @@ Follow these commands to set up the infrastructure with Terraform:
    ```
 
 ---
-## **Snapshots** :camera_flash: 
+## :camera_flash: **Snapshots** 
 - Applying terraform code using "terraform apply"
 ![Alt text](imgs/terraform-apply.png)
 - Verifiying the VPC 
