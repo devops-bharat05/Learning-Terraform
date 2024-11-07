@@ -14,7 +14,6 @@
    terraform workspace list
    terraform apply -auto-approve
    ```
-
    - Change configurations within each workspace, and observe how each workspace has isolated state files.
 
    - **Key Takeaways**:
