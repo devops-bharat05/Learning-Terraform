@@ -8,15 +8,15 @@
      3. Run `terraform init` again to trigger a migration prompt. Confirm the migration.
      4. Check the S3 bucket to ensure the state file has moved.
 
-     ```hcl
+    ```hcl
      # backend.tf (new file)
-   terraform {
-     backend "s3" {
-       bucket = "migration-bucket"
-       key    = "state/terraform.tfstate"
-       region = "us-west-2"
+     terraform {
+       backend "s3" {
+         bucket = "migration-bucket"
+         key    = "state/terraform.tfstate"
+         region = "us-west-2"
+       }
      }
-   }
    ```
 
    **Commands**:
