@@ -52,8 +52,8 @@
    terraform apply -auto-approve
    ```
 
-     - Check the state file for sensitive data handling.
-     - Change configurations within each workspace, and observe how each workspace has isolated state files.
+      Check the state file for sensitive data handling.
+      Change configurations within each workspace, and observe how each workspace has isolated state files.
 
    - **Key Takeaways**:
      - Securing state files by encrypting sensitive data.
