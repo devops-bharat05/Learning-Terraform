@@ -8,11 +8,24 @@
      - `terraform state mv <old-resource> <new-resource>`
      - `terraform state rm <resource>`
 
-   - **Steps**:
-     1. Use `terraform state list` to display all resources in the state.
-     2. Use `terraform state show <resource>` to examine specific resource details.
-     3. Rename an existing resource in your configuration and use `terraform state mv` to apply the change in the state without re-creating the resource.
-     4. Remove a resource from the state using `terraform state rm` (this won’t delete the actual resource, only removes tracking).
+   **Steps**:
+   - Use `terraform state list` to list resources.
+   - Use `terraform state show aws_instance.example` to view the state of the instance.
+   - Modify the instance’s name in `main.tf`:
+     ```hcl
+     # Changing Name tag
+     resource "aws_instance" "example" {
+       ami           = "ami-0c55b159cbfafe1f0"
+       instance_type = "t2.micro"
+
+       tags = {
+         Name = "RenamedInstance"
+       }
+     }
+     ```
+   - Use `terraform state mv aws_instance.example aws_instance.renamed_instance` to update the state name.
+   - Use `terraform state rm aws_instance.example` to remove the resource from the state file.
+
 
    - **Key Takeaways**:
      - Directly manipulating the state file for reorganization and troubleshooting.
