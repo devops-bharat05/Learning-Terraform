@@ -1,7 +1,3 @@
-On **Day 5**, the focus is on understanding **Terraform state files** and **backend configurations**. This day covers how Terraform keeps track of infrastructure resources, best practices for managing state, and options for storing state files either locally or remotely.
-
----
-
 ## 🚀 Overview of Terraform State Files
 
 ### 📘 What is the Terraform State?
