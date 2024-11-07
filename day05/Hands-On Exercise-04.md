@@ -1,4 +1,4 @@
-#### 3. **Working with `terraform state` Commands**
+#### 4. **Working with `terraform state` Commands**
 
    **Objective**: Get hands-on experience with `terraform state` commands to manage resources directly in the state file.
 
