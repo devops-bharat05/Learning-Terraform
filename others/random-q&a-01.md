@@ -1,4 +1,4 @@
-## How can I apply the Terraform configuration from a specific file, such as data-source.tf, without applying the resources defined in the main.tf file when they are in same workspace/dir?
+### How can I apply the Terraform configuration from a specific file, such as data-source.tf, without applying the resources defined in the main.tf file when they are in same workspace/dir?
 
 If you have two separate files, `main.tf` and `data-source.tf`, and you want to apply the Terraform configuration in `data-source.tf` without touching `main.tf`, you can use a specific approach, but there's no direct flag to apply only one `.tf` file. However, you can achieve this by **targeting resources defined in `data-source.tf`** and **using a workaround** to isolate the resources in that file.
 
