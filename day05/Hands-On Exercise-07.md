@@ -9,7 +9,7 @@
      4. Check the S3 bucket to ensure the state file has moved.
   - **Code**:
     ```hcl
-       # backend.tf (new file)
+    # backend.tf (new file)
        terraform {
          backend "s3" {
            bucket = "migration-bucket"
@@ -17,7 +17,7 @@
            region = "us-west-2"
          }
        }
-   ```
+    ```
 
    - Follow the prompt to confirm the migration from local to S3.
 
