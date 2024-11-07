@@ -7,6 +7,15 @@
      2. Use `terraform workspace new dev` and `terraform workspace new prod` to create separate environments.
      3. Deploy resources in each workspace using `terraform apply`.
      4. Observe the separate state files created for each workspace, and confirm isolation by making changes in one workspace without affecting the other.
+  - **Commands**:
+   ```bash
+   terraform workspace new dev
+   terraform workspace new prod
+   terraform workspace list
+   terraform apply -auto-approve
+   ```
+
+   - Change configurations within each workspace, and observe how each workspace has isolated state files.
 
    - **Key Takeaways**:
      - Using workspaces to separate environment configurations.
