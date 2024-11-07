@@ -7,9 +7,8 @@
      2. Configure an S3 backend as described earlier.
      3. Run `terraform init` again to trigger a migration prompt. Confirm the migration.
      4. Check the S3 bucket to ensure the state file has moved.
-
+  - **Code**:
     ```hcl
-    
        # backend.tf (new file)
        terraform {
          backend "s3" {
@@ -18,11 +17,6 @@
            region = "us-west-2"
          }
        }
-   ```
-
-   **Commands**:
-   ```bash
-   terraform init
    ```
 
    - Follow the prompt to confirm the migration from local to S3.
